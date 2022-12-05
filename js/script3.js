@@ -60,3 +60,10 @@ const zucchine = [
         lunghezza : 19,
     },
 ];
+
+let sommaPeso = 0;
+
+for (let i= 0; i<zucchine.length; i++){
+    sommaPeso +=  zucchine[i].peso;
+}
+console.log(sommaPeso);
