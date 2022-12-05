@@ -11,3 +11,13 @@ const studente = {
 for (let key in studente) {
     console.log(key, studente[key]);
 }
+
+const studentessa ={
+    nome : "Marilina",
+    cognome : "Parmisan",
+};
+
+const studenti = [];
+
+studenti.push(studente, studentessa);
+console.log(studenti);
