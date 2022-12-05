@@ -59,4 +59,15 @@
             modello: "q5",
             alimentazione: "diesel",
         },
-   ]
+   ];
+
+   const benzina = [];
+
+   for (let i=0; i < automobili.length; i++){
+        for(let alimentazione in automobili){
+            benzina.push(automobili.alimentazione[benzina]);
+        }
+        console.log(benzina[i])
+   }
+  
+   
