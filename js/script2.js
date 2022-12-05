@@ -62,12 +62,24 @@
    ];
 
    const benzina = [];
+   const diesel = [];
+   const other = [];
+
 
    for (let i=0; i < automobili.length; i++){
-        for(let alimentazione in automobili){
-            benzina.push(automobili.alimentazione[benzina]);
+        // for(let alimentazione in automobili){
+        //     benzina.push(automobili.alimentazione[benzina]);
+        // }
+        // console.log(benzina[i]);    SBAGLIATO
+        const auto = automobili [i];
+        if (auto.alimentazione === "benzina"){
+            benzina.push(auto);
+        } else if (auto.alimentazione === "diesel") {
+            diesel.push(auto);
+        } else {
+            other.push(auto);
         }
-        console.log(benzina[i])
    }
+   console.log(benzina, diesel, other);
   
    
