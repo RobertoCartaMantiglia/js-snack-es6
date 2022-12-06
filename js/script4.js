@@ -73,3 +73,10 @@ const mammiferi = animals.filter((animal) => {
     return false;
 });
 console.log(mammiferi);
+
+//bonus1
+
+const uppercaseAnimal = animals.map((animal) =>{
+    return animal.nome.toUpperCase
+});
+console.log(uppercaseAnimal);
