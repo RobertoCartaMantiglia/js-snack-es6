@@ -59,3 +59,8 @@ const persone = [
         age: 85,
     },
 ];
+
+const statusPeople = persone.map((persona) =>{
+    return ` ${persona.nome} ${persona.cognome}`;
+})
+console.log(statusPeople);
