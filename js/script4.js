@@ -77,7 +77,7 @@ console.log(mammiferi);
 //bonus1
 
 const uppercaseAnimal = mammiferi.map((mammifero) =>{
-    mammifero.nome = mammifero.nome.toUpperCase();
-    return mammifero
+    return mammifero.nome.toUpperCase();
+    
 });
 console.log(uppercaseAnimal);
