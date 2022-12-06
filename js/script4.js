@@ -67,7 +67,7 @@ const animals = [
 console.log(animals);
 
 const mammiferi = animals.filter((animal) => {
-    if(animal.classe == "mammiferi"){
+    if(animal.classe === "mammiferi"){
         return true;
     }
     return false;
@@ -76,7 +76,8 @@ console.log(mammiferi);
 
 //bonus1
 
-const uppercaseAnimal = animals.map((animal) =>{
-    return animal.nome.toUpperCase
+const uppercaseAnimal = mammiferi.map((mammifero) =>{
+    mammifero.nome = mammifero.nome.toUpperCase();
+    return mammifero
 });
 console.log(uppercaseAnimal);
