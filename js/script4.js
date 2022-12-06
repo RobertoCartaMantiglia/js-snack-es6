@@ -65,3 +65,11 @@ const animals = [
     },
 ];
 console.log(animals);
+
+const mammiferi = animals.filter((animal) => {
+    if(animal.classe == "mammiferi"){
+        return true;
+    }
+    return false;
+});
+console.log(mammiferi);
